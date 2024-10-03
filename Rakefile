@@ -21,7 +21,7 @@ task :bower_update do
 end
 
 task :create_build_dir do
-  Dir.mkdir('build') unless Dir.exists?('build')
+  Dir.mkdir('build') unless Dir.exist?('build')
 end
 
 task :copy_jekyll_plugin do

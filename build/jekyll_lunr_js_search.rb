@@ -65,7 +65,7 @@ module Jekyll
           entry = SearchEntry.create(item, content_renderer)
 
           entry.strip_index_suffix_from_url! if @strip_index_html
-          entry.strip_stopwords!(stopwords, @min_length) if File.exists?(@stopwords_file)
+          entry.strip_stopwords!(stopwords, @min_length) if File.exist?(@stopwords_file)
 
           doc = {
             "id" => i,
