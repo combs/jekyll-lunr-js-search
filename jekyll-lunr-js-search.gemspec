@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'jekyll_lunr_js_search/version'
 
 Gem::Specification.new do |s|
-  s.name                  = 'jekyll-lunr-js-search-ruby3'
+  s.name                  = 'jekyll-lunr-js-search'
   s.version               = Jekyll::LunrJsSearch::VERSION
   s.licenses              = ['MIT']
   s.summary               = 'Jekyll + lunr.js = static websites with powerful full-text search using JavaScript. Forked from https://github.com/slashdotdash/jekyll-lunr-js-search to add Ruby 3.3.0 compatibility.'
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.files                 = Dir.glob("lib/**/*.rb") + Dir.glob("build/*.min.js")
   s.homepage              = 'https://github.com/fillipeppalhares/jekyll-lunr-js-search'
   s.require_paths         = ['lib']
-  s.required_ruby_version = '>= 3.2.0'
+  s.required_ruby_version = '>= 3.0.0'
 
   s.add_runtime_dependency 'nokogiri', '~> 1.7'
   s.add_runtime_dependency 'json', '~> 2.0'
